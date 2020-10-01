@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 
 function EmployeeForm(props) {
   return (
@@ -12,9 +11,6 @@ function EmployeeForm(props) {
         name="search"
         id="search"
       />
-      <Button variant="info" onClick={props.handleFormSubmit}>
-        Search
-      </Button>
     </div>
   );
 }

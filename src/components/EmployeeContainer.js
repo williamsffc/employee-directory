@@ -18,26 +18,15 @@ class EmployeeContainer extends Component {
     });
   }
 
-  handleFilter = (filteredEmployees) => {
-    if (filteredEmployees !== "") {
-      this.setState(() => ({
-        options: this.state.options.filter((option) =>
-          option.toLowerCase().includes(filteredEmployees.toLowerCase())
-        ),
-      }));
-    }
-  };
+  filterEmployee = id => {
+    const employee = this.state.search.filter(employee => this.result.id = id);
+    this.setState({ employee });
+  }
+
 
   handleInputChange = (event) => {
-    // const {name, value} = event.target;
     console.log(event.target);
-
     this.setState({ search: event.target.value });
-  };
-
-  handleFormSubmit = (event) => {
-    event.preventDefault();
-    this.componentDidMount(this.state.search);
   };
 
   render() {
