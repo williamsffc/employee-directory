@@ -4,7 +4,7 @@ import * as ReactBootStrap from "react-bootstrap";
 function EmployeeList(props) {
   return (
     <div className="App">
-      <ReactBootStrap.Table stripped bordered hover>
+      <ReactBootStrap.Table bordered hover>
         <thead>
           <tr>
             <th>Image</th>
