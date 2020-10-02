@@ -19,10 +19,11 @@ function EmployeeList(props) {
             <tr>
               <td>
                 <img
-                  key={props.id}
+                  key={result.id.value}
                   alt=""
                   src={result.picture.thumbnail}
                   className="img-fluid"
+                  name="image"
                 />
               </td>
               <td>
