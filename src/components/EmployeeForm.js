@@ -9,7 +9,7 @@ function EmployeeForm(props) {
         type="text"
         placeholder="Employee Name"
         name="search"
-        id="search"
+        // id="search"
       />
     </div>
   );

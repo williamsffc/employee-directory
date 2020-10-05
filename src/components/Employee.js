@@ -16,10 +16,10 @@ function EmployeeList(props) {
         </thead>
         <tbody>
           {props.results.map((result) => (
-            <tr>
+            <tr key={result.id.value}>
               <td>
                 <img
-                  key={result.id.value}
+                  key={result.id}
                   alt=""
                   src={result.picture.thumbnail}
                   className="img-fluid"
@@ -27,15 +27,14 @@ function EmployeeList(props) {
                 />
               </td>
               <td>
+                
                 {result.name.title}
                 {". "}
                 {result.name.first} {result.name.last}
               </td>
               <td>{result.phone}</td>
               <td>
-                <a href="#top">
-                  {result.email}
-                </a>
+                <a href="#top">{result.email}</a>
               </td>
               <td>{result.dob.date}</td>
             </tr>
